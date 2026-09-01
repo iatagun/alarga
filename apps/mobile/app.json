@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "alarga",
+    "slug": "alarga",
+    "scheme": "alarga",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "@maplibre/maplibre-react-native",
+      "expo-notifications",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Bulunduğunuz yerin deniz durumunu göstermek için konum izni gerekli."
+        }
+      ]
+    ],
+    "extra": {
+      "bffUrl": "http://localhost:3000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alarga.app"
+    },
+    "android": {
+      "package": "com.alarga.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "alarga",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Türkiye balıkçıları için deniz/hava durumu uygulaması",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "tsc -b",
+    "bff": "npm run dev --workspace @alarga/bff",
+    "mobile": "npm run start --workspace @alarga/mobile"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  }
+}
